@@ -1,0 +1,4 @@
+.hover-link p:hover{
+    color: rgb(0, 116, 137);
+    border-bottom: 0.1248rem solid rgb(0, 116, 137);
+}

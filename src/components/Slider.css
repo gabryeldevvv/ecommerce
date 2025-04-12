@@ -1,0 +1,68 @@
+/* Estilos gerais do slider */
+.slider {
+    background-color: #f0f0f0; /* Fundo do slider */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Permite posicionar as setas corretamente */
+    
+  }
+  
+  .texto-slide {
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+
+  /* Estilos para as setas de navegação */
+  .seta {
+    background-color: #f0f0f0; /* Fundo do slider */
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding: 0.2rem;
+    border-radius: 30%;
+  }
+  
+  .seta:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Efeito ao passar o mouse */
+  }
+
+  .container {
+    background-color: #f0f0f0; /* Fundo do slider */
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+
+  .content{
+    width: 90%; /* Ocupa 90% da largura do container */
+    max-width: 75rem; /* Largura máxima para telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .column {
+    flex: 1; /* Faz com que cada coluna ocupe o mesmo espaço */
+    text-align: center; /* Centraliza o texto dentro de cada coluna */
+  }
+  
+  .left {
+    text-align: left; /* Alinha o texto à esquerda na primeira coluna */
+  }
+  
+  .center {
+    text-align: center; /* Centraliza o texto na segunda coluna */
+  }
+  
+  .right {
+    text-align: right; /* Alinha o texto à direita na terceira coluna */
+  }

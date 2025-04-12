@@ -1,0 +1,40 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-button {
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.nav-button.left {
+  margin-right: 5px;
+}
+
+.nav-button.right {
+  margin-left: 5px;
+}
