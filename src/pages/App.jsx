@@ -14,7 +14,6 @@ import Banner9 from "../assets/banner9.jpg";
 import "../styles/grid-system.css";
 import CardSlider from '../components/CardSlider';
 import { produtos } from '../data/data';
-import { display, height, maxHeight } from '@mui/system';
 
 const Header = lazy(() => import('../components/Header'));
 const Slider = lazy(() => import('../components/Slider'));

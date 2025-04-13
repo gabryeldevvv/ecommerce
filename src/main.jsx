@@ -6,6 +6,7 @@ import { CircularProgress } from '@mui/joy';
 import './index.css'
 
 const App = lazy(() => import('./pages/App'));
+const Home = lazy(() => import('./pages/Home'));
 const Busca = lazy(() => import('./pages/Busca'));
 const Produto = lazy(() => import('./pages/Produto'));
 const Checkout = lazy(() => import('./pages/Checkout'));
@@ -31,6 +32,7 @@ createRoot(document.getElementById('root')).render(
           location={location}
           routes={[
             { path: '/', element: <App /> },
+            // { path: '/', element: <Home /> },
             { path: '/busca', element: <Busca /> },
             { path: '/produto', element: <Produto /> },
             { path: '/checkout', element: <Checkout /> },

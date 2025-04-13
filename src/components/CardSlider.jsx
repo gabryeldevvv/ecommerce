@@ -3,14 +3,6 @@ import CardProduto from '../components/CardProduto';
 import './CardSlider.css';
 import { Box } from '@mui/joy';
 
-const cards = [
-  { id: 1, title: 'Card 1', description: 'Descrição do Card 1' },
-  { id: 2, title: 'Card 2', description: 'Descrição do Card 2' },
-  { id: 3, title: 'Card 3', description: 'Descrição do Card 3' },
-  { id: 4, title: 'Card 4', description: 'Descrição do Card 4' },
-  { id: 5, title: 'Card 5', description: 'Descrição do Card 5' },
-];
-
 const CardSlider = ( { produtos } ) => {
   const containerRef = useRef(null);
 
@@ -31,7 +23,7 @@ const CardSlider = ( { produtos } ) => {
       <button className="nav-button left" onClick={() => scroll('left')}>&lt;</button>
       <div className="cards-wrapper" ref={containerRef}>
         {produtos.map((produto, index) => (
-          <Box key={index} sx={{ minWidth: '250px' }}>
+          <Box key={index} sx={{ minWidth: '175px' }}>
             <CardProduto produto={produto} />
           </Box>
         ))}
