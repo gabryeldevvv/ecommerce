@@ -12,12 +12,12 @@ import Banner3 from "../assets/banner3.png";
 import Banner4 from "../assets/banner4desktop.jpg";
 import Banner5 from "../assets/banner5.jpg";
 import Banner5Desktop from "../assets/banner5desktop.jpg";
+import Banner5Mobile from "../assets/banner5mobile.jpg";
 import Banner7 from "../assets/banner7.jpg";
 import Banner9 from "../assets/banner9.jpg";
 import "../styles/grid-system.css";
 import CardSlider from '../components/CardSlider';
 import { produtos } from '../data/data';
-import { display } from '@mui/system';
 
 const Header = lazy(() => import('../components/Header'));
 const Slider = lazy(() => import('../components/Slider'));
@@ -154,14 +154,26 @@ export default function App() {
 
             {/* BANNER */}
             <GridItem xs={12}>
-            <Box sx={{  maxWidth: '1395px' }} >
-                <img 
-                  src={Banner5Desktop}
-                  srcSet={Banner5Desktop}
-                  loading="lazy"
-                  alt=""
-                  style={{ width: "100%"}}        
-                />
+              <Box sx={{  maxWidth: '1390px' }} >
+                <picture>
+                  {/* Para telas menores que 600px */}
+                  <source 
+                    media="(max-width: 599px)" 
+                    srcSet={Banner5Mobile}  // Substitua por sua imagem mobile
+                  />
+                  {/* Para telas 600px e maiores */}
+                  <source 
+                    media="(min-width: 600px)" 
+                    srcSet={Banner5Desktop}
+                  />
+                  {/* Fallback para navegadores que não suportam picture */}
+                  <img 
+                    src={Banner5Desktop}
+                    loading="lazy"
+                    alt="Banner promocional"
+                    style={{ width: "100%" }}        
+                  />
+                </picture>
               </Box>
             </GridItem>
 

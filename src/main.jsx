@@ -31,8 +31,8 @@ createRoot(document.getElementById('root')).render(
         <Router
           location={location}
           routes={[
-            // { path: '/', element: <App /> },
-            { path: '/', element: <Home /> },
+            { path: '/', element: <App /> },
+            // { path: '/', element: <Home /> },
             { path: '/busca', element: <Busca /> },
             { path: '/produto', element: <Produto /> },
             { path: '/checkout', element: <Checkout /> },
