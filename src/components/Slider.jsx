@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Typography  } from '@mui/joy';
 import { informativos } from '../data/data';
 
@@ -31,13 +33,12 @@ function Slider() {
       <div className="content">
         {/* Coluna esquerda: botão de slide anterior */}
         <div className="column left">
-          <button
+          <ArrowBackIosIcon
             className="seta esquerda"
             onClick={slideAnterior}
             aria-label="Slide anterior"
           >
-            &#10094;
-          </button>
+          </ArrowBackIosIcon>
         </div>
 
         {/* Coluna central: slide atual */}
@@ -51,13 +52,12 @@ function Slider() {
 
         {/* Coluna direita: botão de próximo slide */}
         <div className="column right">
-          <button
+          <ArrowForwardIosIcon
             className="seta direita"
             onClick={proximoSlide}
             aria-label="Próximo slide"
           >
-            &#10095;
-          </button>
+          </ArrowForwardIosIcon>
         </div>
       </div>
     </div>

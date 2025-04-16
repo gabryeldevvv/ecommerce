@@ -4,6 +4,8 @@ import { GridItem, GridWrapper } from "../styles/GridWrapper";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import PaymentIcon from '@mui/icons-material/Payment';
+import PixIcon from '@mui/icons-material/Pix';
 import Banner1 from "../assets/banner1.jpg";
 import Banner1Mobile from "../assets/banner1mobile.jpg";
 import Banner1Mobile2 from "../assets/banner1mobile-2.jpg";
@@ -266,7 +268,10 @@ export default function App() {
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>email</Typography>
                   <br />
                   <Typography level='h4' sx={{color:'white'}}>FORMAS DE PAGAMENTO</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>bandeiras de pagamento</Typography>
+                  <Box sx={{ display:'grid', gridAutoFlow:'column', justifyContent:'start', gap:1 }}>
+                    <PaymentIcon/>
+                    <PixIcon/>
+                  </Box>
                 </Box>
               </GridItem>
             </GridWrapper>

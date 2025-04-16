@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import CardProduto from '../components/CardProduto';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import './CardSlider.css';
 import { Box } from '@mui/joy';
 
@@ -20,7 +22,7 @@ const CardSlider = ( { produtos } ) => {
 
   return (
     <div className="slider-container">
-      <button className="nav-button left" onClick={() => scroll('left')}>&lt;</button>
+      <ArrowBackIosIcon className="nav-button left" onClick={() => scroll('left')}></ArrowBackIosIcon>
       <div className="cards-wrapper" ref={containerRef}>
         {produtos.map((produto, index) => (
           <Box key={index} sx={{ minWidth: {xs:'200px', sm:'245px', lg:'345px'} }}>
@@ -28,7 +30,7 @@ const CardSlider = ( { produtos } ) => {
           </Box>
         ))}
       </div>
-      <button className="nav-button right" onClick={() => scroll('right')}>&gt;</button>
+      <ArrowForwardIosIcon className="nav-button right" onClick={() => scroll('right')}>&gt;</ArrowForwardIosIcon>
     </div>
   );
 };
