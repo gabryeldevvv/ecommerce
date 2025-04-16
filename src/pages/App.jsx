@@ -1,6 +1,9 @@
 import { React, lazy } from 'react';
 import { Box, Typography } from '@mui/joy';
 import { GridItem, GridWrapper } from "../styles/GridWrapper";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import Banner1 from "../assets/banner1.jpg";
 import Banner1Mobile from "../assets/banner1mobile.jpg";
 import Banner1Mobile2 from "../assets/banner1mobile-2.jpg";
@@ -217,16 +220,23 @@ export default function App() {
             <GridWrapper >
               <GridItem xs={12} sm={6} lg={3}>
                 <Box sx={{mr:5}}>
+                  <br />
                   <Typography level='h4' sx={{color:'white'}}>SHOES IMPORTS</Typography>
                   <br />
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Sua empresa favorita de roupas e calçados importados. Produtos de qualidade e exclusivos.</Typography>
                   <br />
-                  icones redes sociais
+                  <Box sx={{ display:'grid', gridAutoFlow:'column', justifyContent:'start', gap:4 }}>
+                    <InstagramIcon/>
+                    <FacebookIcon/>
+                    <TwitterIcon/>
+                  </Box>
                 </Box>
               </GridItem>
               <GridItem xs={12} sm={6} lg={3}  >
                 <Box>
-                  <Typography level='h5' sx={{color:'white'}}>LINKS ÚTEIS</Typography>
+                  <br />
+                  <Typography level='h4' sx={{color:'white'}}>LINKS ÚTEIS</Typography>
+                  <br />
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Sobre Nós</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Perguntas Frequentes</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Termos e Condições</Typography>
@@ -236,7 +246,9 @@ export default function App() {
               </GridItem>
               <GridItem xs={12} sm={6} lg={3}  >
                 <Box>
-                  <Typography level='h5' sx={{color:'white'}}>CATEGORIAS</Typography>
+                  <br />
+                  <Typography level='h4' sx={{color:'white'}}>CATEGORIAS</Typography>
+                  <br />
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis de Corrida</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis de Basquete</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis Casuais</Typography>
@@ -246,12 +258,14 @@ export default function App() {
               </GridItem>
               <GridItem xs={12} sm={6} lg={3}>
                 <Box>
-                  <Typography level='h5' sx={{color:'white'}}>CONTATO</Typography>
+                  <br />
+                  <Typography level='h4' sx={{color:'white'}}>CONTATO</Typography>
+                  <br />
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>endereco</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>telefone</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>email</Typography>
                   <br />
-                  <Typography level='h5' sx={{color:'white'}}>FORMAS DE PAGAMENTO</Typography>
+                  <Typography level='h4' sx={{color:'white'}}>FORMAS DE PAGAMENTO</Typography>
                   <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>bandeiras de pagamento</Typography>
                 </Box>
               </GridItem>
