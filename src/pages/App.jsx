@@ -214,48 +214,45 @@ export default function App() {
         </Box>
         <Box sx={{ py:'3rem', px:'2rem', color: 'WHITE', backgroundColor: '#182535', }}>
           <Box sx={{maxWidth:'1390px', margin:'0 auto'}}>
-            <GridWrapper>
-              <GridItem xs={3}>
-                <Box sx={{mr:5 }}>
+            <GridWrapper >
+              <GridItem xs={12} sm={6} lg={3}>
+                <Box sx={{mr:5}}>
                   <Typography level='h4' sx={{color:'white'}}>SHOES IMPORTS</Typography>
                   <br />
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Sua empresa favorita de roupas e calçados importados. Produtos de qualidade e exclusivos.</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Sua empresa favorita de roupas e calçados importados. Produtos de qualidade e exclusivos.</Typography>
                   <br />
                   icones redes sociais
                 </Box>
               </GridItem>
-              <GridItem xs={3}  >
+              <GridItem xs={12} sm={6} lg={3}  >
                 <Box>
                   <Typography level='h5' sx={{color:'white'}}>LINKS ÚTEIS</Typography>
-                  <br />
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Sobre Nós</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Perguntas Frequentes</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Termos e Condições</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Política de Privacidade</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Trocas e Devoluções</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Sobre Nós</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Perguntas Frequentes</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Termos e Condições</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Política de Privacidade</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Trocas e Devoluções</Typography>
                 </Box>
               </GridItem>
-              <GridItem xs={3}  >
+              <GridItem xs={12} sm={6} lg={3}  >
                 <Box>
                   <Typography level='h5' sx={{color:'white'}}>CATEGORIAS</Typography>
-                  <br />
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Tênis de Corrida</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Tênis de Basquete</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Tênis Casuais</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Tênis de Skate</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>Tênis de Futsal</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis de Corrida</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis de Basquete</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis Casuais</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis de Skate</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>Tênis de Futsal</Typography>
                 </Box>
               </GridItem>
-              <GridItem xs={3}>
+              <GridItem xs={12} sm={6} lg={3}>
                 <Box>
                   <Typography level='h5' sx={{color:'white'}}>CONTATO</Typography>
-                  <br />
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>endereco</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>telefone</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>email</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>endereco</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>telefone</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>email</Typography>
                   <br />
                   <Typography level='h5' sx={{color:'white'}}>FORMAS DE PAGAMENTO</Typography>
-                  <Typography level='body' sx={{color:'#CFCEC9'}}>bandeiras de pagamento</Typography>
+                  <Typography level='body' sx={{color:'#CFCEC9', py:'5px'}}>bandeiras de pagamento</Typography>
                 </Box>
               </GridItem>
             </GridWrapper>
