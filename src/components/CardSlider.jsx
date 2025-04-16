@@ -23,7 +23,7 @@ const CardSlider = ( { produtos } ) => {
       <button className="nav-button left" onClick={() => scroll('left')}>&lt;</button>
       <div className="cards-wrapper" ref={containerRef}>
         {produtos.map((produto, index) => (
-          <Box key={index} sx={{ minWidth: '175px' }}>
+          <Box key={index} sx={{ minWidth: {sm:'245px', lg:'345px'} }}>
             <CardProduto produto={produto} />
           </Box>
         ))}
