@@ -19,7 +19,7 @@ const CardSlider = ( { produtos } ) => {
       });
     }
   };
-
+  
   return (
     <div className="slider-container">
       <ArrowBackIosIcon className="nav-button left" onClick={() => scroll('left')}></ArrowBackIosIcon>

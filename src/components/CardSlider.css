@@ -24,7 +24,7 @@
 
 .nav-button {
   border: none;
-  padding: 10px;
+  padding: 0 10px 0px 10px;
   font-size: 20px;
   cursor: pointer;
   z-index: 1;
