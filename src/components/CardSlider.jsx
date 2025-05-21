@@ -25,7 +25,7 @@ const CardSlider = ( { produtos } ) => {
       <ArrowBackIosIcon className="nav-button left" onClick={() => scroll('left')}></ArrowBackIosIcon>
       <div className="cards-wrapper" ref={containerRef}>
         {produtos.map((produto, index) => (
-          <Box key={index} sx={{ minWidth: {xs:'300px', sm:'300px', lg:'300px'}}}>
+          <Box key={index} sx={{ minWidth: {xs:'290px', sm:'320px', lg:'345px'}}}>
             <CardProduto produto={produto} />
           </Box>
         ))}
