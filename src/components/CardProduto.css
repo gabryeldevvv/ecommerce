@@ -1,7 +1,7 @@
 .card-produto-imagem {
   min-height: 168px;
   width: 100%; /* Largura total */
-  height: auto; /* Altura automática */
+  height: 'auto'; /* Altura automática */
   border-radius: 8px; /* Bordas arredondadas */
   border: 1px solid #ddd; /* Borda */
 }

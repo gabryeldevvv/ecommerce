@@ -63,7 +63,7 @@ export default function App() {
               </GridItem>
               
               {/* TEXTO INFORMATIVO */}
-              <GridItem xs={12} >
+              {/* <GridItem xs={12} >
                 <Box
                   sx={{
                     maxWidth: 800,
@@ -110,7 +110,7 @@ export default function App() {
                     Com promoções exclusivas e lançamentos das marcas que você ama.
                   </Typography>
                 </Box>
-              </GridItem>
+              </GridItem> */}
 
               {/* SLIDER DE PRODUTOS */}
               <GridItem xs={12}  >
@@ -121,7 +121,7 @@ export default function App() {
               </GridItem>
 
               {/* GRADE DE BANNERS */}
-              <GridItem xs={12} sm={6} hideXs>
+              {/* <GridItem xs={12} sm={6} hideXs>
                 <Box sx={{maxHeight: '690px' }}>
                   <img 
                     src={Banner2Desktop}
@@ -131,7 +131,7 @@ export default function App() {
                     style={{ width: "100%", maxHeight: '690px' }}                
                   />
                 </Box>
-              </GridItem>
+              </GridItem> */}
               {/* <GridItem xs={12} sm={4}>
                 <Box sx={{ maxWidth: '460px'}}>
                   <img 
@@ -143,7 +143,7 @@ export default function App() {
                   />
                 </Box>
               </GridItem> */}
-              <GridItem xs={12} sm={6}>
+              {/* <GridItem xs={12} sm={6}>
                 <Box>
                   <img 
                     src={Banner4}
@@ -153,7 +153,7 @@ export default function App() {
                     style={{ width: "100%"}}                
                   />
                 </Box>
-              </GridItem>
+              </GridItem> */}
 
               <GridItem xs={12}  >
                 <Box sx={{ backgroundColor: '#fcfcfc', maxWidth: '1395px', pb:'4rem'}}>
@@ -165,7 +165,7 @@ export default function App() {
               <GridItem xs={12}  >
                 <Box sx={{ backgroundColor: '#fcfcfc', maxWidth: '1395px', pb:'4rem'}}>
                   <Typography level='h2'  sx={{ fontSize: {xs: '1.4rem', sm:'1.6rem', md:'2rem'} , py: '2rem', pl: '2.3rem'}}>Tênis casuais</Typography>
-                  <CardSlider produtos={produtos} />
+                  <CardSlider produtos={categoriaProdutos[1].produtos} />
                 </Box>
               </GridItem>
 
