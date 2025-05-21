@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { StyledEngineProvider } from '@mui/material/styles';
 import { ReactLocation, Router } from '@tanstack/react-location';
 import { CircularProgress } from '@mui/joy';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './index.css'
 
 const App = lazy(() => import('./pages/App'));
@@ -13,7 +14,10 @@ const Checkout = lazy(() => import('./pages/Checkout'));
 
 const location = new ReactLocation();
 
+const queryClient = new QueryClient();
+
 createRoot(document.getElementById('root')).render(
+  <QueryClientProvider client={queryClient}>
   <StrictMode>
     <StyledEngineProvider injectFirst>
       <Suspense fallback={
@@ -41,4 +45,5 @@ createRoot(document.getElementById('root')).render(
       </Suspense>
     </StyledEngineProvider>
   </StrictMode>
+  </QueryClientProvider>
 )

@@ -66,7 +66,7 @@ export default function Checkout() {
     }
   ];
 
-  const codigoTemplate = 3;
+  const codigoTemplate = 1;
 
   const currentConfig = config.find(item => item.id === codigoTemplate) || config[0];
   const { componente1: Component1, componente2: Component2, step, props1, props2} = currentConfig;

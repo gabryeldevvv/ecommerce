@@ -33,12 +33,12 @@ export default function CardProduto( {produto} ) {
         <Box  >
         
             <img 
-                src={produto.imagem}
-                srcSet={produto.imagem}
+                src={produto.imagens?.[0]?.url_imagem || '/imagem-padrao.jpg'}
+                srcSet={produto.imagens?.[0]?.url_imagem || '/imagem-padrao.jpg'}
                 loading="lazy"
-                alt=""
+                alt={produto.nome}
                 className="card-produto-imagem" 
-            ></img>
+            />
         </Box>
         <Box sx={{ width:'100%'}}>
             <Grid container spacing={0}>

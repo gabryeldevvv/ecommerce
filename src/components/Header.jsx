@@ -74,7 +74,7 @@ export default function Header() {
                   <FavoriteBorderIcon />
                   </IconButton>
                   <IconButton aria-label="Boputão de carrinho">
-                    <Badge badgeContent={4} color='primary' size='sm'>
+                    <Badge badgeContent={3} size='sm' sx={{color: '#182535'}}>
                       <ShoppingBagOutlinedIcon />
                     </Badge>
                   </IconButton>
