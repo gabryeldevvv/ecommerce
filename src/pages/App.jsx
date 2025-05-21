@@ -14,7 +14,6 @@ import Banner2Desktop from "../assets/banner2desktop.jpg";
 import Banner4 from "../assets/banner4desktop.jpg";
 import "../styles/grid-system.css";
 import CardSlider from '../components/CardSlider';
-import { produtos } from '../data/data';
 
 import { useCategoriasComProdutos } from "../hooks/useCategoriaComProdutos";
 
